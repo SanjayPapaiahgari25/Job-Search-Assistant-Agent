@@ -3,30 +3,33 @@ This is a Job Search Agent that scrapes the job boards to get the relevant job p
 
 The following is how the project structure will eventually look like:-
 
-# Project Structure
+## Project Structure
+
+```bash
 app/
-│── main.py # Entry point, includes routers
+│── main.py                 # Entry point, includes routers
 │
-│── core/ # Shared infra & config
-│ ├── database.py # Singleton DB
-│ └── utils.py # (optional) common helpers
+│── core/                   # Shared infra & config
+│   ├── database.py         # Singleton DB
+│   └── utils.py            # (optional) common helpers
 │
-│── models/ # Pydantic models (data contracts)
-│ ├── user_profile.py
-│ ├── job.py
-│ └── matching.py # e.g. JobMatch, ProfileMatch, JobHistory
+│── models/                 # Pydantic models (data contracts)
+│   ├── user_profile.py
+│   ├── job.py
+│   └── matching.py         # e.g. JobMatch, ProfileMatch, JobHistory
 │
-│── services/ # Business logic (domain services)
-│ ├── profiles_service.py # CRUD for profiles
-│ ├── jobs_service.py # CRUD for jobs
-│ └── matching_service.py # Matching logic
+│── services/               # Business logic (domain services)
+│   ├── profiles_service.py # CRUD for profiles
+│   ├── jobs_service.py     # CRUD for jobs
+│   └── matching_service.py # Matching logic
 │
-│── routers/ # API layer
-│ ├── profiles_router.py # /profiles endpoints
-│ ├── jobs_router.py # /jobs endpoints
-│ └── matching_router.py # /match, /candidates, /history endpoints
+│── routers/                # API layer
+│   ├── profiles_router.py  # /profiles endpoints
+│   ├── jobs_router.py      # /jobs endpoints
+│   └── matching_router.py  # /match, /candidates, /history endpoints
 │
-└── tests/ # Tests for each module
-├── test_profiles.py
-├── test_jobs.py
-└── test_matching.py
+└── tests/                  # Tests for each module
+    ├── test_profiles.py
+    ├── test_jobs.py
+    └── test_matching.py
+```
