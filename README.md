@@ -5,27 +5,28 @@ The following is how the project structure will eventually look like:-
 
 # Project Structure
 app/
-│── main.py                 # Entry point, includes routers
-│── core/                   # Shared infra & config
-│   ├── database.py          # Singleton DB
-│   └── utils.py             # (optional) common helpers
+│── main.py # Entry point, includes routers
 │
-│── models/                 # Pydantic models (data contracts)
-│   ├── user_profile.py
-│   ├── job.py
-│   └── matching.py          # e.g. JobMatch, ProfileMatch, JobHistory
+│── core/ # Shared infra & config
+│ ├── database.py # Singleton DB
+│ └── utils.py # (optional) common helpers
 │
-│── services/               # Business logic (domain services)
-│   ├── profiles_service.py  # CRUD for profiles
-│   ├── jobs_service.py      # CRUD for jobs
-│   └── matching_service.py  # Matching logic
+│── models/ # Pydantic models (data contracts)
+│ ├── user_profile.py
+│ ├── job.py
+│ └── matching.py # e.g. JobMatch, ProfileMatch, JobHistory
 │
-│── routers/                # API layer
-│   ├── profiles_router.py   # /profiles endpoints
-│   ├── jobs_router.py       # /jobs endpoints
-│   └── matching_router.py   # /match, /candidates, /history endpoints
+│── services/ # Business logic (domain services)
+│ ├── profiles_service.py # CRUD for profiles
+│ ├── jobs_service.py # CRUD for jobs
+│ └── matching_service.py # Matching logic
 │
-└── tests/                  # Tests for each module
-    ├── test_profiles.py
-    ├── test_jobs.py
-    └── test_matching.py
+│── routers/ # API layer
+│ ├── profiles_router.py # /profiles endpoints
+│ ├── jobs_router.py # /jobs endpoints
+│ └── matching_router.py # /match, /candidates, /history endpoints
+│
+└── tests/ # Tests for each module
+├── test_profiles.py
+├── test_jobs.py
+└── test_matching.py
