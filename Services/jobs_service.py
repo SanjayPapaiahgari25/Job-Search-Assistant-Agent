@@ -29,3 +29,11 @@ class JobService:
         
         self.db.delete_job(job_id)
         return {"message": "Job deleted successfully"}
+    
+    def update_job(self, job_id, updated_job):
+        if not self.db.get_job(job_id):
+            self.db.add_job(updated_job)
+            return {"message": "Job created successfully", "job": updated_job}
+
+        self.db.update_job(job_id, updated_job)
+        return {"message": "Job updated successfully", "job": updated_job}
