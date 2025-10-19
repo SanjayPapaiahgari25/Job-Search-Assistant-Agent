@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Alice",
+        "email": "alice@example.com",
+        "skills": [
+            "Python",
+            "Databases",
+            "Docker",
+            "Kubernetes"
+        ],
+        "experience": [
+            {
+                "company": "TechCorp",
+                "role": "Backend Engineer",
+                "years": 3
+            }
+        ]
+    },
+    {
+        "name": "Bob",
+        "email": "bob@example.com",
+        "skills": [
+            "Python",
+            "FastAPI",
+            "Databases",
+            "Docker"
+        ],
+        "experience": [
+            {
+                "company": "DataWorks",
+                "role": "Backend Dev",
+                "years": 4
+            }
+        ]
+    },
+    {
+        "name": "Charlie",
+        "email": "charlie@example.com",
+        "skills": [
+            "React",
+            "JavaScript",
+            "CSS"
+        ],
+        "experience": [
+            {
+                "company": "UIWorks",
+                "role": "Frontend Developer",
+                "years": 2
+            }
+        ]
+    },
+    {
+        "name": "Diana",
+        "email": "diana@example.com",
+        "skills": [
+            "Photography",
+            "Writing",
+            "Painting"
+        ],
+        "experience": [
+            {
+                "company": "CreativeStudio",
+                "role": "Content Creator",
+                "years": 5
+            }
+        ]
+    },
+    {
+        "name": "Ethan",
+        "email": "ethan@example.com",
+        "skills": [
+            "Python",
+            "SQL",
+            "Machine Learning",
+            "AWS"
+        ],
+        "experience": [
+            {
+                "company": "DataCorp",
+                "role": "Data Analyst",
+                "years": 3
+            },
+            {
+                "company": "AI Labs",
+                "role": "ML Engineer",
+                "years": 2
+            }
+        ]
+    }
+]
