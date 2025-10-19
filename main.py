@@ -2,6 +2,8 @@ from fastapi import FastAPI
 
 from routers.profiles_router import router as profiles_router
 from routers.jobs_router import router as jobs_router
+from routers.matching_router import router as matching_router
+from routers.history_router import router as history_router
 
 app = FastAPI(
     title="AI Job Search Agent",
@@ -9,8 +11,10 @@ app = FastAPI(
     version="1.0.0"
 )
 
-app.include_router(profiles_router, tags=["Profiles"])
-app.include_router(jobs_router, tags=["Jobs"])
+for router in [profiles_router, jobs_router, matching_router, history_router]:
+    if not hasattr(router, 'tags'):
+        router.tags = []
+    app.include_router(router, tags=router.tags)
 
 @app.get("/health", tags=["Health"])
 def health_check():
