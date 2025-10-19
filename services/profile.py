@@ -10,7 +10,6 @@ class ProfileService:
         return self.db.get_profiles()
     
     def get_profile(self, email):
-
         if not self.db.get_profile(email):
             raise HTTPException(status_code=404, detail="Profile not found")
         
