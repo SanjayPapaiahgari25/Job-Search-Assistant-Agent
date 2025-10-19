@@ -1,0 +1,37 @@
+[
+    {
+        "job_id": "job1",
+        "title": "Backend Developer",
+        "company": "TechCorp",
+        "description": "Looking for Python backend developer with API and database experience",
+        "skills_required": [
+            "Python",
+            "FastAPI",
+            "Databases",
+            "Docker"
+        ]
+    },
+    {
+        "job_id": "job2",
+        "title": "Frontend Engineer",
+        "company": "Webify",
+        "description": "Develop modern web apps using React and TypeScript",
+        "skills_required": [
+            "React",
+            "JavaScript",
+            "TypeScript",
+            "CSS"
+        ]
+    },
+    {
+        "job_id": "job3",
+        "title": "Cloud Engineer",
+        "company": "CloudNet",
+        "description": "Manage infrastructure and CI/CD pipelines",
+        "skills_required": [
+            "AWS",
+            "Terraform",
+            "Kubernetes"
+        ]
+    }
+]
