@@ -12,7 +12,3 @@ class UserProfile(BaseModel):
     email: str = Field(..., description="Email address of the user")
     skills: list[str] = Field(..., description="List of skills the user possesses")
     experience: list[WorkExperience] = Field(..., description="List of work experiences")
-
-class ProfileMatch(BaseModel):
-    profile: UserProfile
-    match_score: float = Field(..., description="Match score for this profile", ge=0, le=100)
